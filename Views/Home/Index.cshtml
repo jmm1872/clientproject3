@@ -1,0 +1,34 @@
+﻿@model Project3_FinalExam.ViewModels.AboutViewModel
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+</div>
+<div id="head">
+    <div id="head_title">
+        <h2 id="school"><span class="rit_orange">School</span> of <span class="rit_black">Information</span></h2>
+        <h3 id="its">ITS <span class="rit_orange">&commat;</span> RIT</h3>
+
+    </div>
+</div>
+    <div style="background-color: #F76902; width: 100%; height: 7px;"></div>
+    <div id="dialog"></div>
+
+    <div id="statistics"><img class="images" src="~/media/stats.JPG" /></div>
+
+    <div id="about">
+        <h2 class="section_title">About</h2>
+        <h3 id="quote_title"> @Model.About.title</h3> 
+        <hr class="line"> 
+        <p id="quote_text"> @Model.About.description </p> 
+        <div id="quote_box">
+        <p id="quote">" @Model.About.quote "</p> 
+        <p id="author">-  @Model.About.quoteAuthor </p>        
+        </div> 
+        <br/> <br/>
+    </div>
+
+
+
